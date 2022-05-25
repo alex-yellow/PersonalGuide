@@ -1,0 +1,17 @@
+﻿@model PersonalMvc.Models.Personal
+
+@{
+    ViewBag.Title = "ChooseDepartment";
+}
+
+<h2>Выбрать отдел</h2>
+
+<form action="/Personal/Create" method="get">
+    <select name="departmentId">
+        @foreach (var item in ViewBag.Departments)
+        {
+        <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+    <input type="submit" value="Далее" />
+</form>

@@ -1,0 +1,43 @@
+.main h1{
+    text-align: center;
+    font-size: 50px;
+}
+.personals{
+    font-size: 30px;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+.personals td{
+    padding: 10px;
+}
+.name, .profession, .department{
+    color: red;
+}
+.new{
+    padding: 20px;
+    background: red;;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.newbtn{
+    margin-top: 70px;
+}
+
+
+.footer{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.new2{
+    margin-top: 50px;
+}
+
+.new3{
+    margin-top: 50px;
+}

@@ -1,0 +1,15 @@
+﻿@model PersonalMvc.Controllers.myName
+@{
+    ViewBag.Title = "SearchName";
+}
+
+<h2>SearchName</h2>
+
+<p>Вы набрали слово:</p>
+<h1>@Model.name</h1>
+
+<form action="/Personal/Index" method="get">
+    <input type="hidden" name="department" value="@Model.department" />
+    <input type="hidden" name="searchstring" value="@Model.name" />
+    <input type="submit" value="Продолжить" />
+</form>
