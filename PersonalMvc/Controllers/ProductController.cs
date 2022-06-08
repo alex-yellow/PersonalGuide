@@ -23,5 +23,17 @@ namespace PersonalMvc.Controllers
             ViewBag.Departments = departments;
             return View();
         }
+        [HttpGet]
+        public ActionResult ChoosePersonal(int departmentId)
+        {
+            List<Personal> personals = db.Personals.Where(p => p.DepartmentId == departmentId).ToList();
+            ViewBag.Personals = personals;
+            if(personals.Count == 0)
+            {
+                ViewBag.Error = "В этом отделе нет сотрудников";
+                return View("Error");
+            }
+            return View();
+        }
     }
 }

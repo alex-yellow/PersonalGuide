@@ -6,7 +6,11 @@
 <h2>Выберите отдел</h2>
 
 <form action="/Product/ChoosePersonal" method="get">
-    <select name="">
-        <option value="value">text</option>
+    <select name="departmentId">
+        @foreach(var item in ViewBag.Departments)
+        {
+            <option>@item.Name</option>
+        }
     </select>
+    <input type="submit"  value="Далее" />
 </form>
