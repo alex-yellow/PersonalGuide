@@ -16,5 +16,12 @@ namespace PersonalMvc.Controllers
             var products = db.Products.Include(p => p.Department).Include(m=>m.Material);
             return View(products.ToList());
         }
+        [HttpGet]
+        public ActionResult ChooseDepartment()
+        {
+            List<Department> departments = db.Departments.ToList();
+            ViewBag.Departments = departments;
+            return View();
+        }
     }
 }

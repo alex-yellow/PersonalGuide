@@ -206,6 +206,7 @@
     <Content Include="Views\Personal\AlexeyName.cshtml" />
     <Content Include="Views\Personal\ChooseDepartment.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\ChooseDepartment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
