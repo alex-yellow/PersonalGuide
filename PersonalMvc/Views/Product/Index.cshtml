@@ -1,0 +1,30 @@
+﻿@model IEnumerable<PersonalMvc.Models.Product>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Изделия</h1>
+<div>
+    <table class="table">
+        <tr>
+            <th>Название</th>
+            <th>Отдел</th>
+            <th>Материал</th>
+            <th>Время изготовления</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Department.Name</td>
+                <td>@item.Material.Name</td>
+                <td>@item.Time</td>
+            </tr>
+        }
+    </table>
+</div>
+<a href="/">Главная</a>

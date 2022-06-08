@@ -188,3 +188,5 @@ C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.cs
 C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.csproj.CopyComplete
 C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.dll
 C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.pdb
+C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.Migrations.Product.resources
+C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.Migrations.Material.resources

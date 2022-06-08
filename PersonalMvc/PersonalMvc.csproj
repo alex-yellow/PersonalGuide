@@ -127,6 +127,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\PersonalController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -146,10 +147,20 @@
     <Compile Include="Migrations\202204011151249_Second.Designer.cs">
       <DependentUpon>202204011151249_Second.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206071413341_Product.cs" />
+    <Compile Include="Migrations\202206071413341_Product.Designer.cs">
+      <DependentUpon>202206071413341_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206081508335_Material.cs" />
+    <Compile Include="Migrations\202206081508335_Material.Designer.cs">
+      <DependentUpon>202206081508335_Material.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Material.cs" />
     <Compile Include="Models\Personal.cs" />
     <Compile Include="Models\PersonalContext.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Profession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -194,6 +205,7 @@
     <Content Include="Views\Personal\SearchName.cshtml" />
     <Content Include="Views\Personal\AlexeyName.cshtml" />
     <Content Include="Views\Personal\ChooseDepartment.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -223,6 +235,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204011151249_Second.resx">
       <DependentUpon>202204011151249_Second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206071413341_Product.resx">
+      <DependentUpon>202206071413341_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206081508335_Material.resx">
+      <DependentUpon>202206081508335_Material.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

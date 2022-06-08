@@ -13,10 +13,12 @@ namespace PersonalMvc.Models
         public string Name { get; set; }
         public ICollection<Profession> Professions { get; set; }
         public ICollection<Personal> Personals { get; set; }
+        public ICollection<Product> Products { get; set; }
         public Department()
         {
             Professions = new List<Profession>();
             Personals = new List<Personal>();
+            Products = new List<Product>();
         }
     }
 }
