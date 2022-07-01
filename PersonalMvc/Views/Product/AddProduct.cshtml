@@ -1,0 +1,48 @@
+﻿@model PersonalMvc.Models.Product
+
+@{
+    ViewBag.Title = "AddProduct";
+}
+
+<h2>Добавить изделие</h2>
+
+<form action="/Product/Create" method="post">
+    <input type="hidden" name="Name" value="@Model.Name" />
+    <input type="hidden" name="DepartmentId" value="@Model.DepartmentId" />
+    <input type="hidden" name="PersonalId" value="@Model.PersonalId" />
+    <input type="hidden" name="MaterialId" value="@Model.MaterialId" />
+    <input type="hidden" name="Time" value="@Model.Time" />
+    @if (Model.isBigSize)
+    {
+        <input type="hidden" name="isBigSize" value="true" />
+    }
+    @if (Model.isMilitary)
+    {
+        <input type="hidden" name="isMilitary" value="true" />
+    }
+    @if (Model.isSpecial)
+    {
+        <input type="hidden" name="isSpecial" value="true" />
+    }
+
+    <p>Отдел: @Model.Department.Name</p>
+    <p>Ответственный: @Model.Personal.Name</p>
+    <p>Наименование: @Model.Name</p>
+    <p>Материал: @Model.Material.Name</p>
+    <p>Время изготовления: @Model.Time</p>
+    <p>
+        Тип изделия:
+        @if (Model.isBigSize)
+        {
+        <p>Крупногабаритный</p>
+        }
+        @if (Model.isMilitary)
+        {
+            <p>Специзделие</p>
+        }
+        @if (Model.isSpecial)
+        {
+            <p>Не основное производство</p>
+        }
+        <input type="submit" value="Далее" />
+    </form>

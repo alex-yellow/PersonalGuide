@@ -13,5 +13,6 @@ namespace PersonalMvc.Models
         public DbSet<Department> Departments { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Material> Materials { get; set; }
+        public DbSet<TypeProduct> TypeProducts{ get; set; }
     }
 }

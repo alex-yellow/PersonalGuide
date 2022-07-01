@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PersonalMvc.Models.Product>
+﻿@model IEnumerable<PersonalMvc.Models.ViewModels.ProductViewModel>
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -14,7 +14,10 @@
             <th>Название</th>
             <th>Отдел</th>
             <th>Материал</th>
+            <th>Ответственный сотрудник</th>
             <th>Время изготовления</th>
+            <th>Тип изделия</th>
+            <th></th>
         </tr>
         @foreach (var item in Model)
         {
@@ -22,7 +25,23 @@
                 <td>@item.Name</td>
                 <td>@item.Department.Name</td>
                 <td>@item.Material.Name</td>
-                <td>@item.Time</td>
+                <td>@item.Personal.Name</td>
+                <td>@item.Time час</td>
+                <td>
+                    @if (item.isBigSize)
+                    {
+                        <text>Крупногабаритное</text>
+                    }
+                    @if (item.isMilitary)
+                    {
+                        <text>Специзделие</text>
+                    }
+                    @if (item.isSpecial)
+                    {
+                        <text>Не основное производство</text>
+                    }
+                </td>
+                <td>@Html.ActionLink("Удалить", "Delete", new { id = item.Id })</td>
             </tr>
         }
     </table>

@@ -17,5 +17,10 @@ namespace PersonalMvc.Models
         public Department Department { get; set; }
         [Display(Name = "Зарплата")]
         public int Salary { get; set; }
+        public ICollection<Product> Products { get; set; }
+        public Personal()
+        {
+            Products = new List<Product>();
+        }
     }
 }

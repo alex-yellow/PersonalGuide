@@ -190,3 +190,6 @@ C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.dl
 C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.pdb
 C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.Migrations.Product.resources
 C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.Migrations.Material.resources
+C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.Migrations.Personal.resources
+C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.Migrations.TypeProduct.resources
+C:\Users\Алексей\Desktop\PersonalMvc\PersonalMvc\obj\Debug\PersonalMvc.Migrations.ProductType.resources

@@ -155,6 +155,18 @@
     <Compile Include="Migrations\202206081508335_Material.Designer.cs">
       <DependentUpon>202206081508335_Material.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206081615081_Personal.cs" />
+    <Compile Include="Migrations\202206081615081_Personal.Designer.cs">
+      <DependentUpon>202206081615081_Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206091813114_TypeProduct.cs" />
+    <Compile Include="Migrations\202206091813114_TypeProduct.Designer.cs">
+      <DependentUpon>202206091813114_TypeProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206131651546_ProductType.cs" />
+    <Compile Include="Migrations\202206131651546_ProductType.Designer.cs">
+      <DependentUpon>202206131651546_ProductType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Material.cs" />
@@ -162,6 +174,8 @@
     <Compile Include="Models\PersonalContext.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Profession.cs" />
+    <Compile Include="Models\TypeProduct.cs" />
+    <Compile Include="Models\ViewModels\ProductViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +222,13 @@
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Product\ChooseDepartment.cshtml" />
     <Content Include="Views\Product\Error.cshtml" />
+    <Content Include="Views\Product\ChoosePersonal.cshtml" />
+    <Content Include="Views\Product\CreateName.cshtml" />
+    <Content Include="Views\Product\ChooseMaterial.cshtml" />
+    <Content Include="Views\Product\TimeCreate.cshtml" />
+    <Content Include="Views\Product\TypeProduct.cshtml" />
+    <Content Include="Views\Product\AddProduct.cshtml" />
+    <Content Include="Views\Product\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -243,6 +264,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206081508335_Material.resx">
       <DependentUpon>202206081508335_Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206081615081_Personal.resx">
+      <DependentUpon>202206081615081_Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206091813114_TypeProduct.resx">
+      <DependentUpon>202206091813114_TypeProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206131651546_ProductType.resx">
+      <DependentUpon>202206131651546_ProductType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

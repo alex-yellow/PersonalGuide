@@ -1,4 +1,5 @@
-﻿@model PersonalMvc.Models.Product
+﻿@using PersonalMvc.Models
+@model List<Department>
 @{
     ViewBag.Title = "ChooseDepartment";
 }
@@ -7,9 +8,9 @@
 
 <form action="/Product/ChoosePersonal" method="get">
     <select name="departmentId">
-        @foreach(var item in ViewBag.Departments)
+        @foreach(var item in Model)
         {
-            <option>@item.Name</option>
+        <option value="@item.Id">@item.Name</option>
         }
     </select>
     <input type="submit"  value="Далее" />

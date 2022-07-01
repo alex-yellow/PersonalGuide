@@ -1,0 +1,17 @@
+﻿@model PersonalMvc.Models.Product
+
+@{
+    ViewBag.Title = "TimeCreate";
+}
+
+<h2>Введите время изготовления изделия</h2>
+
+<form action="/Product/TypeProduct" method="get">
+    <input type="hidden" name="Name" value="@Model.Name" />
+    <input type="hidden" name="DepartmentId" value="@Model.DepartmentId" />
+    <input type="hidden" name="PersonalId" value="@Model.PersonalId" />
+    <input type="hidden" name="MaterialId" value="@Model.MaterialId" />
+
+    <input type="text" name="Time" />
+    <input type="submit" value="Далее" />
+</form>

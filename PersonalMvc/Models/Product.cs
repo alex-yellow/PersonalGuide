@@ -11,8 +11,13 @@ namespace PersonalMvc.Models
         public string Name { get; set; }
         public int? DepartmentId { get; set; }
         public Department Department { get; set; }
+        public int? PersonalId { get; set; }
+        public Personal Personal { get; set; }
         public int? MaterialId { get; set; }
         public Material Material { get; set; }
+        public bool isBigSize { get; set; }
+        public bool isMilitary { get; set; }
+        public bool isSpecial { get; set; }
         public int Time { get; set; }
     }
 }

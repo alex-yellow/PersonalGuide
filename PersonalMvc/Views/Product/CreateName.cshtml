@@ -1,0 +1,16 @@
+﻿@model PersonalMvc.Models.Product
+
+@{
+    ViewBag.Title = "CreateName";
+}
+
+<h2>Введите наименование изделия</h2>
+
+<form action="/Product/ChooseMaterial" method="get">
+    <input type="text" name="Name" />
+    <input type="hidden" name="DepartmentId" value="@Model.DepartmentId" />
+    <input type="hidden" name="PersonalId" value="@Model.PersonalId" />
+
+    <input type="submit" value="Далее" />
+</form>
+<p>@ViewBag.ErrorPersonal</p>

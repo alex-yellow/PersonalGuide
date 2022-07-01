@@ -1,0 +1,21 @@
+﻿@model PersonalMvc.Models.Product
+
+@{
+    ViewBag.Title = "TypeProduct";
+}
+
+<h2>Дополнительная информация</h2>
+
+<form action="/Product/AddProduct" method="get">
+    <input type="hidden" name="Name" value="@Model.Name" />
+    <input type="hidden" name="DepartmentId" value="@Model.DepartmentId" />
+    <input type="hidden" name="PersonalId" value="@Model.PersonalId" />
+    <input type="hidden" name="MaterialId" value="@Model.MaterialId" />
+    <input type="hidden" name="Time" value="@Model.Time" />
+
+    <input type="checkbox" name="isBigSize"  value="true"/>Крупногабаритный <br>
+    <input type="checkbox" name="isMilitary" value="true"/>Специзделие <br>
+    <input type="checkbox" name="isSpecial" value="true" />Не основное производство <br>
+
+    <input type="submit" value="Далее" />
+</form>
